@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v3
     - name: docker login
       run: docker login -u acnaweb -p dckr_pat_FgnEIS3MR27b3x8EwXSBN7AnNiM
     - name: build image
