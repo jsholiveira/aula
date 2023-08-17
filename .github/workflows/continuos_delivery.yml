@@ -18,9 +18,10 @@ jobs:
       env: 
         DOCKER_USER: ${{secrets.DOCKER_USER}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        REPOSITORY: ping
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build image
-      run: docker build -t ${{secrets.DOCKER_USER}}/$GITHUB_REPOSITORY:$GITHUB_REF_NAME .
+      run: docker build -t ${{secrets.DOCKER_USER}}/$REPOSITORY:$GITHUB_REF_NAME .
     - name: push to registry
-      run: docker push ${{secrets.DOCKER_USER}}/$GITHUB_REPOSITORY:$GITHUB_REF_NAME
+      run: docker push ${{secrets.DOCKER_USER}}/$REPOSITORY:$GITHUB_REF_NAME

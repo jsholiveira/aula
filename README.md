@@ -96,3 +96,5 @@ docker ps -a
 
 - https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
 - https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3
+
+- https://docs.github.com/en/actions/learn-github-actions/variables
