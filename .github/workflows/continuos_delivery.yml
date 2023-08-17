@@ -17,6 +17,6 @@ jobs:
     - name: docker login
       env: 
         DOCKER_USER: acnaweb
-        DOCKER_PASSWORD: xpto
+        DOCKER_PASSWORD: dckr_pat_fGfi9GqGC5FQewVcss0I7zq23qI
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
