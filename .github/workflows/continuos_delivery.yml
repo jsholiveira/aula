@@ -20,3 +20,5 @@ jobs:
         DOCKER_PASSWORD: dckr_pat_fGfi9GqGC5FQewVcss0I7zq23qI
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - name: build image
+      run: docker build -t $DOCKER_USER/ping:$(date +%s)
