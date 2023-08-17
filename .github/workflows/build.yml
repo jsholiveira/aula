@@ -12,3 +12,5 @@ jobs:
     steps:
     - name: docker login
       run: docker login -u acnaweb -p dckr_pat_FgnEIS3MR27b3x8EwXSBN7AnNiM
+    - name: build image
+      run: docker build -t acnaweb/ping .
