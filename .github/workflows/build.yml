@@ -1,0 +1,14 @@
+name: Building
+
+on:
+  push:
+    branches: [ "aula" ]
+ 
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: docker login
+      run: docker login -u acnaweb -p xpto
