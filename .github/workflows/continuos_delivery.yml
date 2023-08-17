@@ -22,3 +22,5 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build image
       run: docker build -t acnaweb/ping:$(date +%s) .
+    - name: push to registry
+      run: docker push acnaweb/ping

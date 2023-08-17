@@ -93,3 +93,6 @@ docker ps -a
 - https://developer.okta.com/blog/2020/12/28/spring-boot-docker
 - https://sterl.org/2021/05/spring-boot-redirect-to-swaggerui/
 - https://hub.docker.com/
+
+- https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
+- https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3
