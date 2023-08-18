@@ -15,3 +15,5 @@ jobs:
       run: docker login -u acnaweb -p dckr_pat_FgnEIS3MR27b3x8EwXSBN7AnNiM
     - name: build image
       run: docker build -t acnaweb/ping .
+    - name: push to docker
+      run: docker push acnaweb/ping 
