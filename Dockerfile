@@ -16,6 +16,6 @@ COPY --from=build /project/target/app.war /app/app.war
 
 WORKDIR /app
 
-EXPOSE 443
+EXPOSE 80
 
 CMD java $JAVA_OPTS -jar app.war
