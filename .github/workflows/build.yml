@@ -1,6 +1,5 @@
 name: Building
 
-  REPO: ${GITHUB_REPOSITORY,,}
 
 env:
   AZURE_WEBAPP_NAME: pf1514-ping
@@ -8,6 +7,8 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
+  REPO: ${GITHUB_REPOSITORY,,}
+
 
 on:
   push:
