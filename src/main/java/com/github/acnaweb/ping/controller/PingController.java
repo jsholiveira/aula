@@ -12,6 +12,6 @@ public class PingController {
 
     @GetMapping("/ping")
     public String ping() {
-        return "pong 2 " + Calendar.getInstance().toString();
+        return "pong pong " + Calendar.getInstance().toString();
     }
 }
