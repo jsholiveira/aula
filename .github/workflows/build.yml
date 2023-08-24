@@ -7,7 +7,7 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   # github.repository
-  IMAGE_NAME: acnaweb/ping
+  IMAGE_NAME: acnaweb/ping:latest
 
 
 on:
@@ -31,7 +31,7 @@ jobs:
   deploy:
    
     runs-on: ubuntu-latest
-    needs: build
+    needs: build 
 
     steps:
     - name: Deploy to Azure Web App
@@ -40,4 +40,4 @@ jobs:
       with:
         app-name: ${{env.AZURE_WEBAPP_NAME}}
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-        images: '${{env.REGISTRY}}/${{env.IMAGE_NAME}}:latest' 
+        images: '${{env.REGISTRY}}/${{env.IMAGE_NAME}}'
