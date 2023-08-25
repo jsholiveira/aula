@@ -2,9 +2,9 @@ name: Building
 
 
 env:
-  AZURE_WEBAPP_NAME: pf1524-ping
+  AZURE_WEBAPP_NAME: pf1524-demo
   # Use docker.io for Docker Hub if empty 
-  REGISTRY: index.docker.io
+  REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   # github.repository
   IMAGE_NAME: acnaweb/ping:latest
