@@ -5,27 +5,28 @@ API Java com Spring Boot para uso genérico adequada para criação de imagens d
 
 ## Spring Boot
 
-Project: Maven
-Language: Java
-Spring Boot: 2.7.X
-Project Metadata/Group: com.github.acnaweb
-Project Metadata/Artifact: ping
-Project Metadata/Name: ping
-Project Metadata/Description: API for Ping Pong
-Project Metadata/Package name: com.github.acnaweb.ping
-Project Metadata/Packaging: Jar
-Project Metadata/Java: 11
+
+- Project: Maven
+- Language: Java
+- Spring Boot: 2.7.X
+- Project Metadata/Group: com.github.acnaweb
+- Project Metadata/Artifact: ping
+- Project Metadata/Name: ping
+- Project Metadata/Description: API for Ping Pong
+- Project Metadata/Package name: com.github.acnaweb.ping
+- Project Metadata/Packaging: Jar
+- Project Metadata/Java: 11
 
 
 Dependencies:
 - Spring Web
 - [Springdoc OpenAPI](https://springdoc.org/)
 ```
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.14</version>
-		</dependency>
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-ui</artifactId>
+	<version>1.6.14</version>
+</dependency>
 ```
 
 ## Maven
