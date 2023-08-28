@@ -16,6 +16,7 @@
 	<description>API for Ping Pong</description>
 	<properties>
 		<java.version>11</java.version>
+		<springdoc-openapi-ui.version>1.6.14</springdoc-openapi-ui.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,7 +26,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.14</version>
+			<version>${springdoc-openapi-ui.version}</version>
 		</dependency>
 
 		<dependency>
