@@ -8,12 +8,16 @@ WORKDIR /project
 
 RUN mvn clean package
 
-FROM adoptopenjdk/openjdk11:jre-11.0.15_10-alpine
+FROM adoptopenjdk/openjdk11:jre-11.0.19_7-alpine
 
 RUN mkdir /app
 
 COPY --from=build /project/target/app.war /app/app.war
 
+ENV SPRING_PROFILE=stg
+
 WORKDIR /app
 
-CMD java $JAVA_OPTS -jar app.war
+EXPOSE 8080
+
+CMD ["java", "$JAVA_OPTS", "-jar app.war", "-Dspring.profiles.active=$SPRING_PROFILE"]
