@@ -1,4 +1,4 @@
-FROM maven:3.8.3-jdk-11-slim AS build
+FROM maven:3.8.6-jdk-11-slim AS build
 
 RUN mkdir /project
 
@@ -14,10 +14,11 @@ RUN mkdir /app
 
 COPY --from=build /project/target/app.war /app/app.war
 
-ENV SPRING_PROFILE=stg
+ENV PROFILE=stg
 
 WORKDIR /app
 
 EXPOSE 8080
 
-CMD ["java", "$JAVA_OPTS", "-jar app.war", "-Dspring.profiles.active=$SPRING_PROFILE"]
+# ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}",  "-jar", "app.war"]
+ENTRYPOINT java -Dspring.profiles.active=${PROFILE} -jar app.war

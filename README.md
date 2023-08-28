@@ -103,4 +103,5 @@ docker ps -a
 - https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3
 - https://docs.github.com/en/actions/learn-github-actions/variables
 - https://www.baeldung.com/spring-boot-command-line-arguments
+- https://www.baeldung.com/ops/docker-guide
 
