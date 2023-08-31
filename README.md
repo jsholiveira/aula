@@ -111,3 +111,25 @@ WEBSITES_PORT=8080
 - https://www.baeldung.com/spring-boot-command-line-arguments
 - https://www.baeldung.com/ops/docker-guide
 
+
+## Azure + Github + Docker
+
+Azure
+
+Azure
+
+- Criar Grupo de Recursos
+```
+rs-ping
+```
+
+- Criar Aplicativo Web em Serviços de Aplicativo
+```
+pf1524-ping
+```
+
+- Configuar do Deploy em "Implantação" > "Centro de Implantação"
+
+	- Selecionar GitHub Actions
+	- Configurar informações do GitHub Actions
+	- Configurar informações do Registry settings
