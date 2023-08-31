@@ -125,7 +125,7 @@ rs-ping
 
 - Criar Aplicativo Web em Serviços de Aplicativo
 ```
-pf1524-ping
+pf1524-ping-prd
 ```
 
 - Configuar do Deploy em "Implantação" > "Centro de Implantação"
@@ -133,3 +133,5 @@ pf1524-ping
 	- Selecionar GitHub Actions
 	- Configurar informações do GitHub Actions
 	- Configurar informações do Registry settings
+
+WEBSITES_PORT=8080
