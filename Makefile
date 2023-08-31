@@ -18,7 +18,7 @@ i_all: i_build i_scout_viewer i_scout_cves i_recommendations i_lint
 	echo "All"
 
 run_container:
-	docker run -d -e PROFILE=stg -p 8080:8080 ping
+	docker run -d -e PROFILE=stg -p 8082:8082 ping
 
 build:
 	mvn clean package
