@@ -91,6 +91,12 @@ docker ps
 docker ps -a
 ```
 
+#### Azure
+
+```
+WEBSITES_PORT=8080
+```
+
 
 ## Referencias
 
