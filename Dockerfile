@@ -14,11 +14,11 @@ RUN mkdir /app
 
 COPY --from=build /project/target/app.war /app/app.war
 
-ENV PROFILE=dev
+ENV PROFILE=prd
 
 WORKDIR /app
 
-EXPOSE 8080
+EXPOSE 80
 
 # ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILE}",  "-jar", "app.war"]
 # ENTRYPOINT java -Dspring.profiles.active=${PROFILE} -jar app.war
