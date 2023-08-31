@@ -3,8 +3,8 @@ name: Building
 on:
   push:
     branches: [ "base" ]
-  pull_request:
-    branches: [ "base" ]
+  # pull_request:
+  #  branches: [ "base" ]
 
 jobs:
 
@@ -19,10 +19,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: docker login
-
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: build image
-      run: docker build -t ${{secrets.DOCKER_USER}}/$REPOSITORY:$GITHUB_REF_NAME .
+      run: docker build -t $DOCKER_USER/$REPOSITORY:$GITHUB_REF_NAME .
     - name: push to registry
-      run: docker push ${{secrets.DOCKER_USER}}/$REPOSITORY:$GITHUB_REF_NAME
+      run: docker push $DOCKER_USER/$REPOSITORY:$GITHUB_REF_NAME
